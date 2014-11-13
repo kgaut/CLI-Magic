@@ -3,7 +3,7 @@ CLI-Magic
 
 Ensembles de commandes utiles sous GNU/Linux
 ## Gestion de fichiers
- - **rename 's/ /_/g' *** Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores
+ - **rename 's/ /_/g' \*** Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores
 
 ## Subversion
  - **svn log -l 5** Retourne les 5 dernières lignes d'un log
