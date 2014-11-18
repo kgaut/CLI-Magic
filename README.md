@@ -21,5 +21,5 @@ Ensembles de commandes utiles sous GNU/Linux
  - `grep -c ^ toto.txt` => Retourne le nombre de lignes du fichier toto.txt
 
 ## Composer
- - `sudo composer self-update` => Mets à jour composer
- - `composer global update` => Mets à jour l'ensembre des paquets gérés par composer
+ - `sudo composer self-update` => Mise à jour composer
+ - `composer global update` => Mise à jour l'ensemble des paquets gérés par composer
