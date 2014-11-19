@@ -19,7 +19,7 @@ Ensembles de commandes utiles sous GNU/Linux
  - `grep 'mafonction()' --include='\*.php'` => Rechercher les appels de mafonction() uniquement dans les fichiers php
  - `cat toto.txt | grep 'lorem' -c` => Retourne le nombre de "lorem" dans toto.txt
  - `grep -c ^ toto.txt` => Retourne le nombre de lignes du fichier toto.txt
- - `grep 'select' access.log -ni | awk -F "\ " {'print $7'}` => Récuperer uri + query string dans fichier de log apache
+ - `grep access.log | awk -F "\ " {'print $7'}` => Récuperer uri + query string dans fichier de log apache
 
 ## Composer
  - `sudo composer self-update` => Mise à jour composer
