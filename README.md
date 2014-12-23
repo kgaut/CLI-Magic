@@ -24,5 +24,6 @@ Ensembles de commandes utiles sous GNU/Linux
 ## Composer
  - `sudo composer self-update` => Mise à jour composer
  - `composer global update` => Mise à jour l'ensemble des paquets gérés par composer
+
 ## MySQL
  - `gunzip < dump.sql.gz | mysql -u root -p ma_db` => dé-zip et importe le dump **dump.sql.gz** dans la base **ma_db**
