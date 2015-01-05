@@ -2,6 +2,10 @@ CLI-Magic
 =========
 
 Ensembles de commandes utiles sous GNU/Linux
+
+## Globales
+ - `watch -n x <your command>` => Executer et afficher le résultat d'une commande toutes les x secondes
+
 ## Gestion de fichiers
  - `rename 's/ /_/g' *` => Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores
  - `tar cf - * | (cd ../../httpdocs/; tar xvf -)` => Déplacer un dossier et son contenu sans en modifier les droits
