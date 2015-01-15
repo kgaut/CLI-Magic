@@ -3,5 +3,12 @@ Drush
 
 Ensembles de commandes Drush bien pratiques
 
+## Installation / Upgrade / Downgrade
+
+ - `composer global require drush/drush:6.5` => repasser à la version 6.5 stable
+ - `composer global require drush/drush:6.*` => passer sur la dernière version stable de la branche 6.x
+ - `composer global require drush/drush:dev-master` => passer sur la version dev
+ - `composer global update drush/drush` => mettre à jour drush
+
 ## Fonctions générales
   - `Drush use @alias` => rentre dans le namespace @alias, ainsi les commandes suivantes n'auront pas besoin de spécifier d'alias
