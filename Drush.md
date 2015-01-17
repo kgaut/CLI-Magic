@@ -12,3 +12,12 @@ Ensembles de commandes Drush bien pratiques
 
 ## Fonctions générales
   - `Drush use @alias` => rentre dans le namespace @alias, ainsi les commandes suivantes n'auront pas besoin de spécifier d'alias
+
+## Autopsie d'un Alias
+Se trouvent dans le fichier ~/.drush/alias.drush.php
+```php
+$aliases['monsite'] = array( //Nom de l'alias
+  'uri' => 'monsite.dev', //url
+  'root' => '/media/vhosts/monsite.dev/www/', // chemin d'accès à l'instance du drupal
+);
+```
