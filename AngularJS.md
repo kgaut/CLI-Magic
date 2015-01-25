@@ -3,7 +3,7 @@ Angular JS
 
 Installation, configuration et utilisation au jour-le-jour
 
-## Instalation
+## Installation
 tbd...
 
 ## Yeoman
