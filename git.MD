@@ -6,3 +6,8 @@ GIT
  - `git push origin 7.x-1.0` => Diffusion de ce tag
  - `git tag -d 7.x-1.0` => suppression locale d'un tag
  - `git push --delete 7.x-1.0` => suppression distante du tag
+
+## Branches
+ - `git branch -a` => Listing des branches
+ - `git checkout -b NomBranche` => Création d'une branche locale **NomBranche**
+ - `git branch -d NomBranche` => suppresion locale de ma branche **NomBranche**
