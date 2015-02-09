@@ -10,5 +10,6 @@ GIT
 ## Branches
  - `git branch -a` => Listing des branches
  - `git checkout -b NomBranche` => Création d'une branche locale **NomBranche** et déplacement vers la nouvelle branche
- - `git push origin NomBranche => Diffusion de la branche vers le serveur distant
+ - `git push origin NomBranche` => Diffusion de la branche vers le serveur distant
+ - `git checkout master && git merge NomBranche` => déplacement dans le master et merge de la branche **NomBranche**
  - `git branch -d NomBranche` => suppresion locale de ma branche **NomBranche**
