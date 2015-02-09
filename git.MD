@@ -2,12 +2,16 @@ GIT
 =========
 
 ## Tags
+[Git Basics - Tagging](http://git-scm.com/book/en/v2/Git-Basics-Tagging)
  - `git tag -a 7.x-1.0 -m "tagging version 1"` => Création d'un tag localement anoté
  - `git push origin 7.x-1.0` => Diffusion de ce tag
  - `git tag -d 7.x-1.0` => suppression locale d'un tag
  - `git push --delete 7.x-1.0` => suppression distante du tag
 
 ## Branches
+[Branches in a Nutshell](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 
+
+[Basic Branching and Merging](http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
  - `git branch -a` => Listing des branches
  - `git checkout -b NomBranche` => Création d'une branche locale **NomBranche** et déplacement vers la nouvelle branche
  - `git push origin NomBranche` => Diffusion de la branche vers le serveur distant
