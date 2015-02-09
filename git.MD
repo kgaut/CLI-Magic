@@ -1,5 +1,9 @@
 GIT
 =========
+## Commits
+ - `git add mofichier.php` => ajout d'un fichier pour le futur commit
+ - `git commit -m "Message de commit"` => Commit des fichiers "ajoutés" préalablement
+ - `git push` => diffusion des commmits non envoyés encore
 
 ## Tags
 [Git Basics - Tagging](http://git-scm.com/book/en/v2/Git-Basics-Tagging)
