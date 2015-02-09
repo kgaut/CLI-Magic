@@ -13,3 +13,4 @@ GIT
  - `git push origin NomBranche` => Diffusion de la branche vers le serveur distant
  - `git checkout master && git merge NomBranche` => déplacement dans le master et merge de la branche **NomBranche**
  - `git branch -d NomBranche` => suppresion locale de ma branche **NomBranche**
+ - `git push --delete NomBranche` => suppression distante de la branche
