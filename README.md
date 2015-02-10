@@ -1,7 +1,7 @@
 CLI-Magic
 =========
 
-Ensembles de commandes utiles sous GNU/Linux
+Ensembles de commandes utiles sous GNU/Linux. Rien de révolutionnaire ici, mais c'est un aide mémoire sur certaines commandes que l'on utlise pas forcement tous les jours.
 
 ## Globales
  - `watch -n x <your command>` => Executer et afficher le résultat d'une commande toutes les x secondes
