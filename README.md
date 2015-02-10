@@ -6,6 +6,8 @@ Ensembles de commandes utiles sous GNU/Linux. Rien de révolutionnaire ici, mais
 Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous détectez une erreur, une faute d'orthographe, ou si vous avez une explication qui vous semble plus claire.
 
 ## Globales
+|Commande|Résultat|
+|--- | ---|
 |`watch -n x <your command>` | Executer et afficher le résultat d'une commande toutes les x secondes|
 
 ## Gestion de fichiers
