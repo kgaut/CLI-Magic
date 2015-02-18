@@ -16,6 +16,11 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |`rename 's/ /_/g' *` | Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores|
 |`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
 
+## Archives
+
+|Commande|Résultat|
+|------- | -------|
+|`tar -zcvf archive.tar.gz DOSSIER/`|Création d'une archive tar.gz contenant le dossier **DOSSIER**|
 ## Gestion d'images
 |Commande|Résultat|
 |------- | -------|
