@@ -10,14 +10,7 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |------- | -------|
 |`watch -n x <your command>` | Executer et afficher le résultat d'une commande toutes les x secondes|
 
-## Gestion de fichiers
-|Commande|Résultat|
-|------- | -------|
-|`rename 's/ /_/g' *` | Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores|
-|`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
-
 ## Archives
-
 |Commande|Résultat|
 |------- | -------|
 |`tar -zcvf archive.tar.gz DOSSIER/`|Création d'une archive tar.gz contenant le dossier **DOSSIER**|
@@ -30,18 +23,11 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |`composer global update` | Mise à jour l'ensemble des paquets gérés par composer|
 |`composer config -g github-oauth.github.com <token>` | ajouter un token oauth de github pour composer pour éviter les limites d'accès API (CF : https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens)|
 
-## Images
+## Fichiers
 |Commande|Résultat|
 |------- | -------|
-|`mogrify -resize 150 monimage.jpg` | Redimensionne l'image **monimage.jpg** à 150px de large|
-|`mogrify -resize 150 *.jpg` | Redimensionne toutes les images jpg d'un dossier à 150px de large|
-
-## Subversion
-|Commande|Résultat|
-|------- | -------|
-|`svn log -l 5` | Retourne les 5 dernières lignes d'un log|
-|`svn log -l | grep 'USER'` | Lister l'ensemble des COMMIT par USER|
-|`svn log -l | grep 'USER' -c` | Récuperer le nombre de COMMIT par USER|
+|`rename 's/ /_/g' *` | Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores|
+|`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
 
 ## Grep
 |Commande|Résultat|
@@ -51,9 +37,21 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |`grep -c ^ toto.txt` | Retourne le nombre de lignes du fichier toto.txt|
 |`grep access.log | awk -F "\ " {'print $7'}` | Récuperer uri + query string dans fichier de log apache|
 
+## Images
+|Commande|Résultat|
+|------- | -------|
+|`mogrify -resize 150 monimage.jpg` | Redimensionne l'image **monimage.jpg** à 150px de large|
+|`mogrify -resize 150 *.jpg` | Redimensionne toutes les images jpg d'un dossier à 150px de large|
 
 ## MySQL
 |Commande|Résultat|
 |------- | -------|
 |`gunzip < dump.sql.gz | mysql -u root -p ma_db` | dé-zip et importe le dump **dump.sql.gz** dans la base **ma_db**|
 |`mysql -u USER -h localhost -p DB > DUMP.SQL` | dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** avec un password qui sera demandé au moment du dump|
+
+## Subversion
+|Commande|Résultat|
+|------- | -------|
+|`svn log -l 5` | Retourne les 5 dernières lignes d'un log|
+|`svn log -l | grep 'USER'` | Lister l'ensemble des COMMIT par USER|
+|`svn log -l | grep 'USER' -c` | Récuperer le nombre de COMMIT par USER|
