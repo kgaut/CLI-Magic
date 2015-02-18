@@ -21,7 +21,16 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |Commande|Résultat|
 |------- | -------|
 |`tar -zcvf archive.tar.gz DOSSIER/`|Création d'une archive tar.gz contenant le dossier **DOSSIER**|
-## Gestion d'images
+
+## Composer
+|Commande|Résultat|
+|------- | -------|
+|`curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer`|Installer Composer de manière globale|
+|`composer self-update` | Mise à jour composer (à utiliser en tant que super user)|
+|`composer global update` | Mise à jour l'ensemble des paquets gérés par composer|
+|`composer config -g github-oauth.github.com <token>` | ajouter un token oauth de github pour composer pour éviter les limites d'accès API (CF : https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens)|
+
+## Images
 |Commande|Résultat|
 |------- | -------|
 |`mogrify -resize 150 monimage.jpg` | Redimensionne l'image **monimage.jpg** à 150px de large|
@@ -42,13 +51,6 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |`grep -c ^ toto.txt` | Retourne le nombre de lignes du fichier toto.txt|
 |`grep access.log | awk -F "\ " {'print $7'}` | Récuperer uri + query string dans fichier de log apache|
 
-## Composer
-|Commande|Résultat|
-|------- | -------|
-|`curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer`|Installer Composer de manière globale|
-|`composer self-update` | Mise à jour composer (à utiliser en tant que super user)|
-|`composer global update` | Mise à jour l'ensemble des paquets gérés par composer|
-|`composer config -g github-oauth.github.com <token>` | ajouter un token oauth de github pour composer pour éviter les limites d'accès API (CF : https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens)|
 
 ## MySQL
 |Commande|Résultat|
