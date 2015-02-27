@@ -23,6 +23,8 @@ GIT
 |`git branch -d NomBranche` | suppresion locale de ma branche **NomBranche**|
 |`git push --delete NomBranche` | suppression distante de la branche|
 |`git push origin :NomBranche` | Idem ci-dessus : suppression distante de la branche|
+|`git branch -m AncienNom NouveauNom` | Renommer la branche locale **AncienNom** en **NouveauNom**|
+|`git branch -m NouveauNom` | Renommer la branche locale courante **NouveauNom**|
 
 ## Tags
 [Git Basics - Tagging](http://git-scm.com/book/en/v2/Git-Basics-Tagging)
