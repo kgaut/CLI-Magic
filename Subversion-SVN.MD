@@ -3,7 +3,9 @@ Subversion - SVN
 Parce qu'il n'y a pas que GIT dans la vie...
 
 ## Branches
-**Context : on est au sein d'une copie locale d'un dépot**
+
+**Contexte : on est au sein d'une copie locale d'un dépot**
+
 |Commande|Résultat|
 |------- | -------|
 |`svn copy http://SERVEUR/DEPOT/trunk http://SERVEUR/DEPOT/branches/NomBranche -m "Creation de la branche NomBranche"` | Creation d'une nouvelle branche |
