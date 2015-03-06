@@ -4,7 +4,7 @@ Parce qu'il n'y a pas que GIT dans la vie...
 
 ## Branches
 
-**Contexte : on est au sein d'une copie locale d'un dépot**
+**Contexte : à la racine d'une copie locale d'un dépot**
 
 |Commande|Résultat|
 |------- | -------|
