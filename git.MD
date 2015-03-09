@@ -36,3 +36,10 @@ GIT
 |`git tag -d 7.x-1.0` | suppression locale d'un tag|
 |`git push --delete 7.x-1.0` | suppression distante du tag|
 |`git push origin :7.x-1.0` | Idem ci-dessus : suppression distante du tag|
+
+## God Save Me ! 
+
+Vous avez foutu la merde ? Voici comment vous en sortir...
+
+|Commande|Résultat|
+|------- | -------|
