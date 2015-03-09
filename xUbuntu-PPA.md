@@ -10,3 +10,9 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:shutter/ppa`|**shutter** : Killer app de screenshots|
+
+## Web
+
+|Adresse|Description|
+|------- | -------|
+|`ppa:mozillateam/firefox-next` | Firefox Beta|
