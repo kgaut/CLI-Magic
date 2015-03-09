@@ -43,3 +43,4 @@ Vous avez foutu la merde ? Voici comment vous en sortir...
 
 |Commande|Résultat|
 |------- | -------|
+|`git reset --hard HEAD`|Annuler toutes les modifications et retourner à la dernière version "commitée"|
