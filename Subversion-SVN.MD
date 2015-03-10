@@ -9,6 +9,8 @@ Parce qu'il n'y a pas que GIT dans la vie...
 |Commande|Résultat|
 |------- | -------|
 |`svn log -l 5`|Obtenir des infos sur les 5 derniers commits|
+|`svn log -v -r 234`|Informations détaillés sur un commit en particulier|
+
 
 
 ## Branches
