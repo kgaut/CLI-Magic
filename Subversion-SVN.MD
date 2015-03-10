@@ -2,6 +2,15 @@ Subversion - SVN
 =========
 Parce qu'il n'y a pas que GIT dans la vie...
 
+## Divers
+
+**Contexte : à la racine d'une copie locale d'un dépot**
+
+|Commande|Résultat|
+|------- | -------|
+|`svn log -l 5`|Obtenir des infos sur les 5 derniers commits|
+
+
 ## Branches
 
 **Contexte : à la racine d'une copie locale d'un dépot**
