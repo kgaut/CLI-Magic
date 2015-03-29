@@ -23,3 +23,9 @@ chmod a+x /usr/local/bin/symfony
 |------- | -------|
 |`php app/console server:start`|Lance le serveur embed PHP|
 |`php app/console server:stop`|Arrête le serveur embed PHP|
+
+## Mise à jour via Composer
+Dans la racine du projet symfony
+|Commande|Résultat|
+|------- | -------|
+|`composer update`|Mise à jour des dépendances|
