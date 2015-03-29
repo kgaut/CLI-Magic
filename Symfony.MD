@@ -15,6 +15,7 @@ chmod a+x /usr/local/bin/symfony
 |------- | -------|
 |`symfony new myproject`|Crée un nouveau projet symfony dans le dossier myproject|
 |`symfony new myproject lts`|Crée un nouveau projet symfony avec la version **LTS** (Long Time Support) dans le dossier myproject|
+|`symfony new myproject 2.3.23`|Crée un nouveau projet symfony avec la version **2.3.23**|
 
 
 ## Serveur PHP
