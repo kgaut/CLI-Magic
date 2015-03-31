@@ -28,6 +28,7 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |------- | -------|
 |`du -h`| Afficher le poids du dossier courant|
 |`du -h -d 2`|Afficher le poids du dossier courant en affichant que deux niveau de profondeur|
+|`find -mtime -2`|Trouver l'ensemble des fichiers modifiés au cours des 2 derniers jours|
 |`rename 's/ /_/g' *` | Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores|
 |`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
 |` scp -P 1374 fichier.tar root@server.net:/home/test`| Envoyer le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh 1374 |
