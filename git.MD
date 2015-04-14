@@ -9,6 +9,13 @@ GIT
 |`git commit -a -m "Message de commit"` | Commit de tous les fichiers qui ont étés déjà versionnés|
 |`git push` | diffusion des commmits non envoyés encore|
 
+## Revert
+
+|Commande|Résultat|
+|------- | -------|
+|`git revert <commit_id>` | Annuler le commit dont l'identifiant est <commit_id>|
+
+
 ## Branches
 [Branches in a Nutshell](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 
 
