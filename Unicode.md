@@ -1,4 +1,6 @@
 #Code Unicode Coool
 
 ✘
+✗
+
 ✓ 
