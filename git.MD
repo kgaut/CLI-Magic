@@ -50,7 +50,7 @@ GIT
 |------- | -------|
 |`git submodule add git@server:repo lib/dossier`|ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
 |`git submodule init`|Initialise les submodules du repo que l'on vient de cloner|
-
+|`git submodule update`|Update ("Pull") des submodules|
 
 
 ## God Save Me ! 
