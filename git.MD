@@ -44,6 +44,13 @@ GIT
 |`git push --delete 7.x-1.0` | suppression distante du tag|
 |`git push origin :7.x-1.0` | Idem ci-dessus : suppression distante du tag|
 
+## Submodules
+
+|Commande|Résultat|
+|------- | -------|
+|`git submodule add git@server:repo lib/dossier`|ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
+
+
 ## God Save Me ! 
 
 Vous avez foutu la merde ? Voici comment vous en sortir...
