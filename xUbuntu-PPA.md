@@ -6,6 +6,11 @@ PPAs Pour Ubuntu et dérivés
 |------- | -------|
 |`ppa:mdoyen/homebank`|**homebank** : Compta pro & perso http://homebank.free.fr/|
 
+## Développement
+|Adresse|Description|
+|------- | -------|
+|`ppa:git-core/ppa`|**git** : Version à jour du gestionnaire de version|
+
 ## Gestion de fichiers
 |Adresse|Description|
 |------- | -------|
