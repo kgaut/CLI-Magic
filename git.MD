@@ -15,6 +15,14 @@ GIT
 |------- | -------|
 |`git revert <commit_id>` | Annuler le commit dont l'identifiant est <commit_id>|
 
+## Logs
+
+|Commande|Résultat|
+|------- | -------|
+|`git log -n 5` | Obtenir le listing des 5 derniers commits locaux|
+|`git log origin/master -n 5` | Obtenir le listing des 5 derniers commits de la branche master distante|
+
+
 
 ## Branches
 [Branches in a Nutshell](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 
