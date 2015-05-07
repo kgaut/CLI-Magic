@@ -54,7 +54,7 @@ GIT
 
 |Commande|Résultat|
 |------- | -------|
-| `git archive --output=../monarchive.tar.gz --verbose **branche1** $(git diff --cached --name-only **master**)`| Création d'une archive .tar.gz des modifications entre la branche **branche1** et le **master **, ces deux éléments pouvant être remplacés par des tags, des id de commit...|
+| `git archive --output=../monarchive.tar.gz --verbose branche1 $(git diff --cached --name-only master)`| Création d'une archive .tar.gz des modifications entre la branche **branche1** et le **master **, ces deux éléments pouvant être remplacés par des tags, des id de commit...|
 
 ## Submodules
 
