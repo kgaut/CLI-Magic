@@ -22,8 +22,6 @@ GIT
 |`git log -n 5` | Obtenir le listing des 5 derniers commits locaux|
 |`git log origin/master -n 5` | Obtenir le listing des 5 derniers commits de la branche master distante|
 
-
-
 ## Branches
 [Branches in a Nutshell](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 
 
@@ -51,6 +49,12 @@ GIT
 |`git tag -d 7.x-1.0` | suppression locale d'un tag|
 |`git push --delete 7.x-1.0` | suppression distante du tag|
 |`git push origin :7.x-1.0` | Idem ci-dessus : suppression distante du tag|
+
+## Archives différentielles
+
+|Commande|Résultat|
+|------- | -------|
+| `git archive --output=../monarchive.tar.gz --verbose **branche1** $(git diff --cached --name-only **master**)`| Création d'une archive .tar.gz des modifications entre la branche **branche1** et le **master **, ces deux éléments pouvant être remplacés par des tags, des id de commit...|
 
 ## Submodules
 
