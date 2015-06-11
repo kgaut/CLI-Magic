@@ -57,7 +57,7 @@ GIT
 | `git archive --output=../monarchive.tar.gz --verbose branche1 $(git diff --cached --name-only master)`| Création d'une archive .tar.gz des modifications entre la branche **branche1** et le **master **, ces deux éléments pouvant être remplacés par des tags, des id de commit...|
 
 ## Submodules
-
+[Quelques infos sur les submodules](http://stackoverflow.com/questions/1777854/git-submodules-specify-a-branch-tag)
 |Commande|Résultat|
 |------- | -------|
 |`git submodule add git@server:repo lib/dossier`|ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
