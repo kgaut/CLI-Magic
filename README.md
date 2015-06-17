@@ -54,6 +54,11 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |`gunzip < dump.sql.gz | mysql -u root -p ma_db` | dé-zip et importe le dump **dump.sql.gz** dans la base **ma_db**|
 |`mysql -u USER -h localhost -p DB > DUMP.SQL` | dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** avec un password qui sera demandé au moment du dump|
 
+## Utilisateurs
+|Commande|Résultat|
+|------- | -------|
+|`adduser login` | Créé l'utilisateur **login** de manière interactive|
+
 ## Subversion
 |Commande|Résultat|
 |------- | -------|
