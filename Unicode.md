@@ -1,6 +1,9 @@
 #Code Unicode Coool
+##Arrows
+###←↑→↓↔↕↖↗↘↙
 
 ✘
 ✗
 
 ✓ 
+
