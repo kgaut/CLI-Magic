@@ -10,6 +10,7 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:git-core/ppa`|**git** : Version à jour du gestionnaire de version|
+|`ppa:webkit-team/ppa`|**webkit**|
 
 ## Gestion de fichiers
 |Adresse|Description|
