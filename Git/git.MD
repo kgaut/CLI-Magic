@@ -58,6 +58,7 @@ GIT
 
 ## Submodules
 [Quelques infos sur les submodules](http://stackoverflow.com/questions/1777854/git-submodules-specify-a-branch-tag)
+
 |Commande|Résultat|
 |------- | -------|
 |`git submodule add git@server:repo lib/dossier`|ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
