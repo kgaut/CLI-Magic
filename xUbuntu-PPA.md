@@ -10,6 +10,7 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:git-core/ppa`|**git** : Version à jour du gestionnaire de version|
+|`ppa:tuxpoldo/phpmyadmin`|**PhpMyAdmin** : dernières version de PMA|
 |`ppa:webkit-team/ppa`|**webkit** : WebKitGtk+, Liferea (WebKit), Midori and other WebKit related projects.|
 
 ## Gestion de fichiers
