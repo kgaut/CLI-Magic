@@ -73,6 +73,7 @@ Vous avez foutu la merde ? Voici comment vous en sortir...
 |Commande|Résultat|
 |------- | -------|
 |`git reset --hard HEAD`|Annuler toutes les modifications et retourner à la dernière version "commitée"|
+|`git reset --hard origin/dev`|Annuler toutes les modifications et retourner à la dernière version de la branche **dev** sur la remote **origin**|
 
 ## Links
 [2015-03-19 - 8 Tips to help you work better with Git](https://about.gitlab.com/2015/02/19/8-tips-to-help-you-work-better-with-git/)
