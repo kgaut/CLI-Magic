@@ -19,7 +19,7 @@ Ensembles de commandes Drush bien pratiques
 
 ## Gestion de module
 |**commande**|**Alias**|**Résultat**|
-|------------|------------|
+|------------|------------|------------|
 |`drush pm-download **projet**`|`drush dl **projet**`|Télécharge le module **projet**|
 |`drush pm-enable **projet**`|`drush en **projet**`|Active le module **projet**|
 |`drush pm-update **projet**`|`drush up **projet**`|Met à jour le module **projet**|
