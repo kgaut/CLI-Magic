@@ -17,6 +17,15 @@ Ensembles de commandes Drush bien pratiques
 |------------|------------|
 |`Drush use @alias`|rentre dans le namespace @alias, ainsi les commandes suivantes n'auront pas besoin de spécifier d'alias|
 
+## Gestion de module
+|**commande**|**Alias**|**Résultat**|
+|------------|------------|
+|`drush pm-download **projet**`|`drush dl **projet**`|Télécharge le module **projet**|
+|`drush pm-enable **projet**`|`drush en **projet**`|Active le module **projet**|
+|`drush pm-update **projet**`|`drush up **projet**`|Met à jour le module **projet**|
+|`drush pm-update`|`drush up`|Met à jour l'ensemble des modules|
+|`drush pm-updatestatus`|`drush ups`|Affiche la liste des mises à jours disponibles pour les projets activées|
+
 ## Autopsie d'un Alias
 Se trouvent dans le fichier ~/.drush/alias.drush.php
 ```php
