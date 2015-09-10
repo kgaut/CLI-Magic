@@ -1,6 +1,12 @@
 xUbuntu-PPA
 =========
 PPAs Pour Ubuntu et dérivés
+
+## Utilitaires / Système 
+|Adresse|Description|
+|------- | -------|
+|`ppa:daou/ppa`|**btnx** : Utilitaire de configuration de souris|
+
 ## Compta 
 |Adresse|Description|
 |------- | -------|
@@ -19,7 +25,6 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:shutter/ppa`|**shutter** : Killer app de screenshots|
 
 ## Web
-
 |Adresse|Description|
 |------- | -------|
 |`ppa:mozillateam/firefox-next` | Firefox Beta|
