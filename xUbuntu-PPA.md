@@ -28,3 +28,12 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:mozillateam/firefox-next` | Firefox Beta|
+
+
+## Thems
+|Adresse|Description|
+|------- | -------|
+|`ppa:numix/ppa` | numix-icon-theme-circle numix-gtk-theme |
+
+
+
