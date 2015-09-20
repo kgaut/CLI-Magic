@@ -34,6 +34,6 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:numix/ppa` | numix-icon-theme-circle numix-gtk-theme |
-
+|`ppa:noobslab/themes`| http://www.noobslab.com|
 
 
