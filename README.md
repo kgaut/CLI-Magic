@@ -59,6 +59,8 @@ Les pull requests sont évidement les bienvenues, n'hésitez-pas aussi si vous d
 |------- | -------|
 |`adduser login` | Créé l'utilisateur **login** de manière interactive|
 |`usermod -a -G www-data login`|Ajoute l'utilisateur *existant* **login** au groupe **www-data**|
+|`userdel login`|Supprime l'utilisateur **login**|
+|`userdel -r login`|Supprime l'utilisateur **login** et son dossier home|
 
 ## Subversion
 |Commande|Résultat|
