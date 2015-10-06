@@ -21,12 +21,12 @@ Ensembles de commandes Drush bien pratiques
 ## Gestion de module
 |**commande**|**Alias**|**Résultat**|
 |------------|------------|------------|
-|`drush pm-download projet`|`drush dl **projet**`|Télécharge le module **projet**|
-|`drush pm-enable projet`|`drush en **projet**`|Active le module **projet**|
-|`drush pm-releasenotes projet`|`drush rln **projet**`|Affiche le changelog pour le module **projet**|
-|`drush pm-update projet`|`drush up **projet**`|Met à jour le module **projet**|
-|`drush pm-update`|`drush up`|Met à jour l'ensemble des modules|
-|`drush pm-updatestatus`|`drush ups`|Affiche la liste des mises à jours disponibles pour les projets activées|
+|`drush pm-download projet`|`dl`|Télécharge le module **projet**|
+|`drush pm-enable projet`|`en`|Active le module **projet**|
+|`drush pm-releasenotes projet`|`rln`|Affiche le changelog pour le module **projet**|
+|`drush pm-update projet`|`up`|Met à jour le module **projet**|
+|`drush pm-update`|`up`|Met à jour l'ensemble des modules|
+|`drush pm-updatestatus`|`ups`|Affiche la liste des mises à jours disponibles pour les projets activées|
 
 ## Autopsie d'un Alias
 Se trouvent dans le fichier ~/.drush/alias.drush.php
