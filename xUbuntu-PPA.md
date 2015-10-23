@@ -6,6 +6,7 @@ PPAs Pour Ubuntu et dérivés
 |Adresse|Description|
 |------- | -------|
 |`ppa:daou/ppa`|**btnx** : Utilitaire de configuration de souris|
+|`ppa:tualatrix/ppa`|**Ubuntu Tweak** : Utilitaire de configuration du système|
 
 ## Compta 
 |Adresse|Description|
@@ -30,7 +31,7 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:mozillateam/firefox-next` | Firefox Beta|
 
 
-## Thems
+## Themes
 |Adresse|Description|
 |------- | -------|
 |`ppa:numix/ppa` | numix-icon-theme-circle numix-gtk-theme |
