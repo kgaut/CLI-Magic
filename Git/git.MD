@@ -5,6 +5,7 @@ GIT
 |Commande|Résultat|
 |------- | -------|
 |`git add mofichier.php` | ajout d'un fichier pour le futur commit|
+|`git add mofichier.php --patch` | ajout partiel du contenu d'un fichier pour le futur commit|
 |`git commit -m "Message de commit"` | Commit des fichiers "ajoutés" préalablement|
 |`git commit -a -m "Message de commit"` | Commit de tous les fichiers qui ont étés déjà versionnés|
 |`git push` | diffusion des commmits non envoyés encore|
