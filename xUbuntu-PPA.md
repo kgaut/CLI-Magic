@@ -19,6 +19,7 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:git-core/ppa`|**git** : Version à jour du gestionnaire de version|
 |`ppa:nijel/phpmyadmin`|**PhpMyAdmin** : dernières version de PMA|
 |`ppa:webkit-team/ppa`|**webkit** : WebKitGtk+, Liferea (WebKit), Midori and other WebKit related projects.|
+|`ppa:cpick/hub`|**hub** : Github "hub"|
 
 ## Gestion de fichiers
 |Adresse|Description|
