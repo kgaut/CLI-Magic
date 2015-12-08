@@ -17,15 +17,6 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |------- | -------|
 |`tar -zcvf archive.tar.gz DOSSIER/`|Création d'une archive tar.gz contenant le dossier **DOSSIER**|
 
-## Composer
-|Commande|Résultat|
-|------- | -------|
-|`curl -sS https://getcomposer.org/installer | php && sudo mv composer.phar /usr/local/bin/composer`|Installer Composer de manière globale|
-|`composer self-update` | Mise à jour composer|
-|`composer clear-cache`| Vider le cache de composer|
-|`composer global update` | Mise à jour l'ensemble des paquets gérés par composer|
-|`composer config -g github-oauth.github.com <token>` | ajouter un token oauth de github pour composer pour éviter les limites d'accès API (CF : https://getcomposer.org/doc/articles/troubleshooting.md#api-rate-limit-and-oauth-tokens)|
-
 ## Fichiers
 |Commande|Résultat|
 |------- | -------|
