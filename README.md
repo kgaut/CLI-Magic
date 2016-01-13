@@ -45,8 +45,10 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 ## MySQL
 |Commande|Résultat|
 |------- | -------|
-|`gunzip < dump.sql.gz | mysql -u root -p ma_db` | dé-zip et importe le dump **dump.sql.gz** dans la base **ma_db**|
-|`mysql -u USER -h localhost -p DB > DUMP.SQL` | dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** avec un password qui sera demandé au moment du dump|
+|`mysql -u USER -h localhost -p DB > DUMP.SQL` | Dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** si l'utilisateur mysql **root** a un mot de passe|
+|`mysql -u USER -h localhost DB > DUMP.SQL` | Dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** si l'utilisateur mysql **root** n'a pas de mot de passe|
+|`mysql -u USER -h localhost -p DB < DUMP.SQL` | Importe de dump **DUMP.SQL** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** a un mot de passe|
+|`mysql -u USER -h localhost DB < DUMP.SQL` | Importe de dump **DUMP.SQL** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root**  n'a pas de mot de passe|
 
 ## Utilisateurs
 |Commande|Résultat|
