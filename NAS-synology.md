@@ -12,5 +12,7 @@ NAS Synology
 
 |**fichier**|**Programme**|
 |------------|------------|
-|`/var/packages/deluge/scripts/start-stop-status`|Deluge|
-|`/var/packages/sickbeard-custom/scripts/start-stop-status`|Sick Beard|
+|`/var/packages/deluge/scripts/start-stop-status`|Deluge - Configuration|
+|`/var/packages/sickbeard-custom/scripts/start-stop-status`|Sick Beard - Configuration|
+|`/usr/local/deluge/`|Deluge - Installation|
+|`/usr/local/sickbeard-custom/`|Sick Beard - Installation|
