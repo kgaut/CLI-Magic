@@ -5,6 +5,7 @@ PPAs Pour Ubuntu et dérivés
 ## Utilitaires / Système 
 |Adresse|Description|
 |------- | -------|
+|`ppa:webupd8team/gnome3`|**gnome-shell** : Environement de bureau|
 |`ppa:daou/ppa`|**btnx** : Utilitaire de configuration de souris|
 |`ppa:tualatrix/ppa`|**Ubuntu Tweak** : Utilitaire de configuration du système|
 |`curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb` | **Keybase**|
