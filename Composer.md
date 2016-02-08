@@ -19,6 +19,13 @@ Dans un terminal :
 
 ## Paquets et ressources utiles
 
+###drupal-coder
+Contient aussi code-sniffer, permet de vérifier son code sur les bonnes pratiques
+
+Installation :
+
+```composer global require drupal/coder```
+
 ###drupal-project
 Utiliser drupal à la sauce composer, compatible avec drupal 7 et drupal 8
 
