@@ -8,6 +8,7 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:webupd8team/gnome3`|**gnome-shell** : Environement de bureau|
 |`ppa:daou/ppa`|**btnx** : Utilitaire de configuration de souris|
 |`ppa:tualatrix/ppa`|**Ubuntu Tweak** : Utilitaire de configuration du système|
+|`ppa:ubuntu-wine/ppa`|**Wine** : Lancer des applications windows sous GNU/Linux|
 |`curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb` | **Keybase**|
 
 ## Compta 
