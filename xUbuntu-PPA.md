@@ -24,11 +24,12 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:webkit-team/ppa`|**webkit** : WebKitGtk+, Liferea (WebKit), Midori and other WebKit related projects.|
 |`ppa:cpick/hub`|**hub** : Github "hub"|
 
-## Gestion de fichiers / photos
+## Gestion de fichiers / photos / Vidéos
 |Adresse|Description|
 |------- | -------|
 |`ppa:shutter/ppa`|**shutter** : Killer app de screenshots|
 |`ppa:nomacs/stable`|**nomacs** : Picasa-like|
+|`ppa:maarten-baert/simplescreenrecorder`|**simplescreenrecorder** : Application de screencast|
 
 ## Web
 |Adresse|Description|
