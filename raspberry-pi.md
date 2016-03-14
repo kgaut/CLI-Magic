@@ -14,6 +14,8 @@ Image linux minimale basée sur Debian
 
 http://www.howtogeek.com/142044/how-to-turn-a-raspberry-pi-into-an-always-on-bittorrent-box/
 
+http://www.howtogeek.com/146410/how-to-automate-your-always-on-raspberry-pi-download-box/all/
+
 ###Commandes pratiques
 
 ####Lancer l'outil de configuration
