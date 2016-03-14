@@ -14,5 +14,8 @@ http://www.howtogeek.com/142044/how-to-turn-a-raspberry-pi-into-an-always-on-bit
 
 ###Commandes pratiques
 
+####Lancer l'outil de configuration
+`sudo raspi-config`
+
 ####Changer le nom de la machine
 `sudo hostname nouveaunom`
