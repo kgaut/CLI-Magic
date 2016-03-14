@@ -1,9 +1,9 @@
 #Raspberry Pi
 
 ##Raspbian
-https://www.raspberrypi.org/downloads/raspbian/
+(Télécharger l'image)[https://www.raspberrypi.org/downloads/raspbian/]
 
-https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+(Flasher l'image sur une carte SD)[https://www.raspberrypi.org/documentation/installation/installing-images/linux.md]
 
 http://raspbian-france.fr/installer-raspbian-premier-demarrage-configuration/
 
