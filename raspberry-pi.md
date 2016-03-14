@@ -10,6 +10,8 @@ Image linux minimale basée sur Debian
 
 [Installation et configuration](http://raspbian-france.fr/installer-raspbian-premier-demarrage-configuration/)
 
+[Monter automatiquement un dossier réseau](http://geeks.noeit.com/mount-an-smb-network-drive-on-raspberry-pi/)
+
 http://www.howtogeek.com/142044/how-to-turn-a-raspberry-pi-into-an-always-on-bittorrent-box/
 
 ###Commandes pratiques
