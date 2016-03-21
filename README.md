@@ -49,6 +49,8 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`mysql -u USER -h localhost DB > DUMP.SQL` | Dump la base **DB** du serveur **localhost** dans le fichier **DUMP.SQL** si l'utilisateur mysql **root** n'a pas de mot de passe|
 |`mysql -u USER -h localhost -p DB < DUMP.SQL` | Importe de dump **DUMP.SQL** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** a un mot de passe|
 |`mysql -u USER -h localhost DB < DUMP.SQL` | Importe de dump **DUMP.SQL** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root**  n'a pas de mot de passe|
+|`zcat DUMP.sql.gz | mysql -u USER -p DB` |Importe de dump gzipé **DUMP.sql.gz** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** a un mot de passe|
+|`zcat DUMP.sql.gz | mysql -u USER DB` |Importe de dump gzipé **DUMP.sql.gz** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** n'a pas de mot de passe|
 
 ## Utilisateurs
 |Commande|Résultat|
