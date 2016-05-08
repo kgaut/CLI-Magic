@@ -4,6 +4,13 @@ Des trucs qu'ils sont bien pour cet environement de bureau [WIP]
 
 ## Extensions
 
+### Alternatetab
+![](https://extensions.gnome.org/static/extension-data/screenshots/screenshot_15.png)
+
+Remplace le "Alt-tab" par un plus classique, en supprimant le regroupement des fenêtres par application.
+
+Lien : [Gnome.org](https://extensions.gnome.org/extension/15/alternatetab/)
+
 ### Audio-Output-Switcher
 Permet de switcher entre les sorties sons du pc (casque / HP...)
 
@@ -15,6 +22,13 @@ Liens :
 Permet de garder un historique de son presse-papier
 
 Lien : [Gnome.org](https://extensions.gnome.org/extension/1028/gnome-shell-audio-output-switcher/)
+
+### Taskbar
+![](https://extensions.gnome.org/static/extension-data/screenshots/screenshot_584_PSh3ecJ.png)
+
+Ajoute les icones des applications lancées dans la barre supérieure
+
+Lien : [Gnome.org](https://extensions.gnome.org/extension/584/taskbar/)
 
 ## Themes
 
