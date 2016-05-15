@@ -9,7 +9,7 @@ http://pellelatarte.fr/2011/03/le-ssh-pour-tous-les-utilisateurs-sur-les-nas-syn
 
 |**commande**|**Résultat**|
 |------------|------------|
-|`vi vi /etc/crontab`|Modifier les tâches cron|
+|`vi /etc/crontab`|Modifier les tâches cron|
 |`/usr/syno/sbin/synoservicectl --restart crond`|Redémarrer le service cron|
 
 
