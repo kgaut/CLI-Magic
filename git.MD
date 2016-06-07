@@ -1,7 +1,13 @@
 GIT
 =========
-## Commits
 
+
+## Authentification
+|Commande|Résultat|
+|------- | -------|
+|`git config credential.helper store`|Si accès en HTTP, cette commande va enregistrer les identifiants tapés lors de la session dans le fichier ~/.git-credentials [Plus d'infos](https://git-scm.com/docs/git-credential-store)|
+
+## Commits
 |Commande|Résultat|
 |------- | -------|
 |`git add mofichier.php` | ajout d'un fichier pour le futur commit|
