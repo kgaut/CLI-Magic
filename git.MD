@@ -11,6 +11,7 @@ GIT
 ## Ignorer les modification d'un fichier
 Afin d'éviter de commiter un fichier de config que l'on a modifié pour son environement
 **Note :** Le mieux restant de passer par un fichier de configuration
+
 |Commande|Résultat|
 |------- | -------|
 |`git update-index --assume-unchanged path/to/file.txt`|Enlève le fichier spécifié des fichiers modifiés lors d'un `git status`|
