@@ -7,6 +7,16 @@ GIT
 |------- | -------|
 |`git config credential.helper store`|Si accès en HTTP, cette commande va enregistrer les identifiants tapés lors de la session dans le fichier ~/.git-credentials [Plus d'infos](https://git-scm.com/docs/git-credential-store)|
 
+
+## Ignorer les modification d'un fichier
+Afin d'éviter de commiter un fichier de config que l'on a modifié pour son environement
+**Note :** Le mieux restant de passer par un fichier de configuration
+|Commande|Résultat|
+|------- | -------|
+|`git update-index --assume-unchanged path/to/file.txt`|Enlève le fichier spécifié des fichiers modifiés lors d'un `git status`|
+|`git update-index --no-assume-unchanged path/to/file.txt`|Ajoute le fichier spécifié aux fichiers modifiés lors d'un `git status`|
+
+
 ## Commits
 |Commande|Résultat|
 |------- | -------|
