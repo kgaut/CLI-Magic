@@ -6,9 +6,13 @@ Des trucs qu'ils sont bien pour cet environement de bureau [WIP]
 ###Ouvrir un terminal dans le dossier courant 
 Editer le fichier ~/.config/nautilus/accels
 `vim ~/.config/nautilus/accels`
+
 Remplacer la ligne 
+
 `; (gtk_accel_path "<Actions>/ExtensionsMenuGroup/TerminalNautilus:OpenFolderLocal" "")`
+
 par
+
 `(gtk_accel_path "<Actions>/ExtensionsMenuGroup/TerminalNautilus:OpenFolderLocal" "F12")`
 
 ## Extensions
