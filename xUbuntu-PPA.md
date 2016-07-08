@@ -10,6 +10,7 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:tualatrix/ppa`|**Ubuntu Tweak** : Utilitaire de configuration du système|
 |`ppa:ubuntu-wine/ppa`|**Wine** : Lancer des applications windows sous GNU/Linux|
 |`ppa:tuxpoldo/btsync`|**btsync** : logiciel de synchronisation asynchrone|
+|`ppa:font-manager/staging`|**font-manager**|
 |`curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb` | **Keybase**|
 
 ## Compta 
