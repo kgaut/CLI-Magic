@@ -27,7 +27,9 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git push` | diffusion des commmits non envoyés encore|
 
 ## Cherry pick
+
 Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'une autre branche sans avoir à la merger
+
 |Commande|Résultat|
 |------- | -------|
 |`git cherry-pick COMMIT_ID` | ajoute le commit désigné|
