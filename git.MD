@@ -17,7 +17,6 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git update-index --assume-unchanged path/to/file.txt`|Enlève le fichier spécifié des fichiers modifiés lors d'un `git status`|
 |`git update-index --no-assume-unchanged path/to/file.txt`|Ajoute le fichier spécifié aux fichiers modifiés lors d'un `git status`|
 
-
 ## Commits
 |Commande|Résultat|
 |------- | -------|
@@ -26,6 +25,13 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git commit -m "Message de commit"` | Commit des fichiers "ajoutés" préalablement|
 |`git commit -a -m "Message de commit"` | Commit de tous les fichiers qui ont étés déjà versionnés|
 |`git push` | diffusion des commmits non envoyés encore|
+
+## Cherry pick
+Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'une autre branche sans avoir à la merger
+|Commande|Résultat|
+|------- | -------|
+|`git cherry-pick COMMIT_ID` | ajoute le commit désigné|
+|`git cherry-pick COMMIT_ID1..COMMIT_ID1` | ajoute l'ensemble de commit de COMMIT\_ID1 à COMMIT\_ID2 (COMMIT\_ID1 devant être le plus vieux|
 
 ## Revert
 
