@@ -129,8 +129,8 @@ then
                 echo "creation dossier contenant les fichiers de log ${CONF_DOCUMENT_ROOT}${domainedomaine}/${CONF_CREATE_LOG_FOLDER_NAME}"
                 sudo mkdir -p ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}
                 sudo mkdir -p ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_CONF_FOLDER_NAME}
-                sudo touch /media/vhosts/${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/error.log
-                sudo touch /media/vhosts/${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/access.log
+                sudo touch ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/error.log
+                sudo touch ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/access.log
         fi
 fi
 
@@ -173,10 +173,10 @@ then
 
         if [ CONF_CREATE_LOG_FOLDER ]
        	then
-            sudo echo -e "\tErrorLog /media/vhosts/${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/error.log" >> ${pathToVhost}
-            sudo echo -e "\tCustomLog /media/vhosts/${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/access.log common" >> ${pathToVhost}
+            sudo echo -e "\tErrorLog ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/error.log" >> ${pathToVhost}
+            sudo echo -e "\tCustomLog ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/access.log common" >> ${pathToVhost}
        	fi
-        sudo echo -e "\t#PHPINIDir /media/vhosts/${domaine}/${CONF_CREATE_CONF_FOLDER_NAME}" >> ${pathToVhost}
+        sudo echo -e "\t#PHPINIDir ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_CONF_FOLDER_NAME}" >> ${pathToVhost}
         sudo echo -e "\tDocumentRoot \"${www_folder}\"" >> ${pathToVhost}
 
         
@@ -243,7 +243,7 @@ then
 
         echo -e "\$aliases['${drush_alias}'] = array(" >> ${CONF_DRUSH_RC_FILE}
         echo -e "\t'uri' => '${domaineDev}'," >> ${CONF_DRUSH_RC_FILE}
-        echo -e "\t'root' => '/media/vhosts/${domaine}/www/'," >> ${CONF_DRUSH_RC_FILE}
+        echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}/www/'," >> ${CONF_DRUSH_RC_FILE}
         echo -e ");" >> ${CONF_DRUSH_RC_FILE}
 
         echo "Voulez créer un aliad bash pour cet alias drush ? Y/n"
