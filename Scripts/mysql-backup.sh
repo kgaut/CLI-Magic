@@ -29,7 +29,6 @@ else
   DB_TO_SAVE=""
 fi
 
-
 # Emplacemment des different prog utilisé, laisser tel quel si vous n'avez rien bidouillé
 MYSQL="$(which mysql)"
 MYSQLDUMP="$(which mysqldump)"
@@ -37,14 +36,10 @@ CHOWN="$(which chown)"
 CHMOD="$(which chmod)"
 GZIP="$(which gzip)"
 
-
-
-#Rep ou on fout le sql
-
 #Date du jour
 NOW="$(date +"%Y-%m-%d_%H-%M-%S")"
 
-# Databases a ne pas sauvegarder separer par des espaces
+# Databases a ne pas sauvegarder séparés par des espaces
 IGGY="CMS test phpmyadmin information_schema mysql performance_schema"
 
 # On initialise les variables
