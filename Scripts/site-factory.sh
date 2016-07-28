@@ -246,7 +246,7 @@ then
         echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}${CONF_BASEPATH}'," >> ${CONF_DRUSH_RC_FILE}
         echo -e ");" >> ${CONF_DRUSH_RC_FILE}
 
-        echo "Voulez créer un alias bash pour cet alias drush ? Y/n"
+        echo "Voulez-vous créer un alias bash pour cet alias drush ? Y/n"
         read inputAlias
         if [ "$inputAlias" = "y" -o "$inputAlias" = "Y" -o -z "$inputAlias" ]
         then        
