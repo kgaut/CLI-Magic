@@ -243,7 +243,7 @@ then
 
         echo -e "\$aliases['${drush_alias}'] = array(" >> ${CONF_DRUSH_RC_FILE}
         echo -e "\t'uri' => '${domaineDev}'," >> ${CONF_DRUSH_RC_FILE}
-        echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}/www/'," >> ${CONF_DRUSH_RC_FILE}
+        echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}${CONF_BASEPATH}'," >> ${CONF_DRUSH_RC_FILE}
         echo -e ");" >> ${CONF_DRUSH_RC_FILE}
 
         echo "Voulez créer un aliad bash pour cet alias drush ? Y/n"
