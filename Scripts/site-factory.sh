@@ -10,29 +10,29 @@
 # CONFIGURATION
 #############################################
 
-# le root du dossier www
+# Le root du dossier www
 CONF_DOCUMENT_ROOT="/media/vhosts/"
 
-# si dans le dossier du domaine on veux un sous dossier qui soit le basepath
+# Si dans le dossier du domaine on veut un sous dossier qui soit le basepath
 # ex : /media/vhosts/monsite.com/ => BASEPATH="/"
 # ex : /media/vhosts/monsite.com/httpdocs => BASEPATH="/httpdocs/"
 CONF_BASEPATH="/www/"
 
 # Doit on aussi créer les dossiers logs, db.. dans le dossier
 # ex : /media/vhosts/monsite.com/db
-# ex : /media/vhosts/monsite.com/www # crée automatiquement à l'aide du parametre de configuration CONF_BASEPATH plus haut
-CONF_CREATE_SPECIAL_FOLDERS=$true #valeurs possible $false ou $true
+# ex : /media/vhosts/monsite.com/www # Crée automatiquement à l'aide du paramètre de configuration CONF_BASEPATH plus haut
+CONF_CREATE_SPECIAL_FOLDERS=$true # Valeurs possible $false ou $true
 
 declare -a CONF_SPECIALS_FOLDERS=("sh" "db" "docs")
 
 # Doit on créer un dossier pour contenir les fichiers de log ?
-CONF_CREATE_LOG_FOLDER=$true #valeurs possible $false ou $true
+CONF_CREATE_LOG_FOLDER=$true # Valeurs possible $false ou $true
 
-# le nom du dossier contenant les fichiers de log
+# Le nom du dossier contenant les fichiers de log
 # ex : /media/vhosts/monsite.com/logs avec la valeur logs
 CONF_CREATE_LOG_FOLDER_NAME="logs"
 
-# le nom du dossier contenant les fichiers de conf (php.ini...)
+# Le nom du dossier contenant les fichiers de conf (php.ini...)
 # ex : /media/vhosts/monsite.com/conf avec la valeur conf
 CONF_CREATE_CONF_FOLDER_NAME="conf"
 
@@ -45,7 +45,7 @@ CONF_DRUSH_BASH_ALIAS="$HOME/.dotfiles/bash_aliases"
 # Chemin vers le fichier hosts
 CONF_HOSTS_FILE="/etc/hosts"
 
-# extention utilisé pour les sites en developpement
+# Extention utilisé pour les sites en développement
 CONF_DEV_EXT="dev"
 
 # Accès à la base de données
@@ -55,7 +55,7 @@ CONF_DB_PASS="mysql"
 
 
 #############################################
-#PARTIE 1 RECUPERATION DE L'URL DU SITE EN PROD
+# PARTIE 1 RÉCUPERATION DE L'URL DU SITE EN PROD
 #############################################
 echo "--------------------------------------------"
 echo "--------------- Site Factory ---------------"
@@ -83,7 +83,7 @@ domainePart[${nbElement}]='dev'
 
 if [ ${domainePart[0]} = "www" ]
 then
-        flag_www=$true #le flag sert pour le ServerName du vhost
+        flag_www=$true # Le flag sert pour le ServerName du vhost
         unset domainePart[0]
 else
         flag_www=$false        
@@ -98,18 +98,18 @@ domaine=${domaine:1}
 
 pathToVhost="/etc/apache2/sites-available/${domaineDev}.conf"
 
-echo "URL du site en developpement : ${domaineDev}"
+echo "URL du site en développement : ${domaineDev}"
 echo "Le vhost sera situé : ${pathToVhost}"
 
 
-# création du vhost en .dev
+# Création du vhost en .dev
 
 echo "Voulez vous créer les dossiers de travail ? Y/n"
 read inputAlias
 if [ "$inputAlias" = "y" -o "$inputAlias" = "Y"  -o -z "$inputAlias" ]
 then
         echo "Veuillez renseigner le dossier de travail en absolu."
-        echo "si vide : ${CONF_DOCUMENT_ROOT}${domaine}${CONF_BASEPATH}"
+        echo "Si vide : ${CONF_DOCUMENT_ROOT}${domaine}${CONF_BASEPATH}"
         read www_folder
         if [ -z "$www_folder" ]
         then
@@ -120,13 +120,13 @@ then
         then
                 for i in ${!CONF_SPECIALS_FOLDERS[*]}
                 do
-                        echo "creation dossier ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_SPECIALS_FOLDERS[i]}"
+                        echo "Création du dossier ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_SPECIALS_FOLDERS[i]}"
                         sudo mkdir -p ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_SPECIALS_FOLDERS[i]}
                 done
         fi
         if [ CONF_CREATE_LOG_FOLDER ]
         then
-                echo "creation dossier contenant les fichiers de log ${CONF_DOCUMENT_ROOT}${domainedomaine}/${CONF_CREATE_LOG_FOLDER_NAME}"
+                echo "Création du dossier contenant les fichiers de log ${CONF_DOCUMENT_ROOT}${domainedomaine}/${CONF_CREATE_LOG_FOLDER_NAME}"
                 sudo mkdir -p ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}
                 sudo mkdir -p ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_CONF_FOLDER_NAME}
                 sudo touch ${CONF_DOCUMENT_ROOT}${domaine}/${CONF_CREATE_LOG_FOLDER_NAME}/error.log
@@ -135,13 +135,13 @@ then
 fi
 
 #############################################
-# CREATION VHOST APACHE 2.4
+# CRÉATION VHOST APACHE 2.4
 #############################################
 echo "Voulez vous créer Le Virtual Host Apache 2.4 ? Y/n"
 read inputAlias
 if [ "$inputAlias" = "y" -o "$inputAlias" = "Y"  -o -z "$inputAlias" ]
 then
-        echo "Creation du Vhost Apache 2.4"
+        echo "Création du Vhost Apache 2.4"
         ServerAlias=$false
         if [ flag_www ]
         then
@@ -207,10 +207,10 @@ fi
 
 
 #############################################
-# CREATION BASE DE DONNEES
+# CRÉATION BASE DE DONNEES
 #############################################
 echo "----------"
-echo "Voulez vous créer une base de donnée ? Y/n"
+echo "Voulez vous créer une base de données ? Y/n"
 read inputAlias
 if [ "$inputAlias" = "y" -o "$inputAlias" = "Y" -o -z "$inputAlias" ]
 then
@@ -227,7 +227,7 @@ then
 fi
 
 #############################################
-# CREATION ALIAS DRUSH
+# CRÉATION ALIAS DRUSH
 #############################################
 echo "----------"
 echo "Voulez vous créer un alias Drush ? Y/n"
@@ -243,10 +243,10 @@ then
 
         echo -e "\$aliases['${drush_alias}'] = array(" >> ${CONF_DRUSH_RC_FILE}
         echo -e "\t'uri' => '${domaineDev}'," >> ${CONF_DRUSH_RC_FILE}
-        echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}/www/'," >> ${CONF_DRUSH_RC_FILE}
+        echo -e "\t'root' => '${CONF_DOCUMENT_ROOT}${domaine}${CONF_BASEPATH}'," >> ${CONF_DRUSH_RC_FILE}
         echo -e ");" >> ${CONF_DRUSH_RC_FILE}
 
-        echo "Voulez créer un aliad bash pour cet alias drush ? Y/n"
+        echo "Voulez créer un alias bash pour cet alias drush ? Y/n"
         read inputAlias
         if [ "$inputAlias" = "y" -o "$inputAlias" = "Y" -o -z "$inputAlias" ]
         then        
