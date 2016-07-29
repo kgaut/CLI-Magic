@@ -1,7 +1,7 @@
 Mac - Macos Stuff
 =========
 
-Commandes qui permettent de s'en sortir avec ce truck fermé as fuck qu'est MacOS
+Commandes qui permettent de s'en sortir avec ce truc **fermé as fuck** qu'est MacOS
 
 ## Fonctions générales
 |Commande|Résultat|
