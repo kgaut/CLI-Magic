@@ -20,8 +20,9 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 ## Fichiers
 |Commande|Résultat|
 |------- | -------|
-|`du -h`| Afficher le poids du dossier courant|
-|`du -h -d 2`|Afficher le poids du dossier courant en affichant que deux niveau de profondeur|
+|`du -h`| Afficher le poids du dossier courant, et affiche le poids de chacun des fichiers|
+|`du -h --max-depth=1 ./`| Afficher le poids du dossier courant et de chacun des dossier de niveau 1|
+|`du -h --max-depth=1 ./ | sort -h`| Afficher le poids du dossier courant et de chacun des dossier de niveau 1, en les triant par poids|
 |`find -mtime -2`|Trouver l'ensemble des fichiers modifiés au cours des 2 derniers jours|
 |`rename 's/ /_/g' *` | Renommer tous les fichier d'un répertoire en replaçant les espaces par des underscores|
 |`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
