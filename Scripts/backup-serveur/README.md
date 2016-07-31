@@ -9,7 +9,9 @@ Les fichiers *\*.cfg* contiennent la configuration de la sauvegarde d'un dossier
 
 Le fichier d'exemple fournis va se connecter en SSH via le port *22* au serveur *monserveur.net* et va sauvegarder le dossier */home* dans le répertoire local */backup/monserveur/home*.
 
-Il concervera 7 versions des données (si on fait un backup par jours alors il y'aura 7 jours de backups). Chaque fichier, si non modifié sera un *hard link* vers le fichier de la **révision** précédente, afin d'économiser de l'espace.
+Il conservera 7 versions des données (si 1 backup/jour alors : 7 jours de backups conservés). 
+
+Chaque fichier, si non modifié, sera un *hard link* vers le fichier de la **révision** précédente, afin d'économiser de l'espace.
 
 L'architecture sera la suivante : 
 ```
@@ -20,7 +22,6 @@ L'architecture sera la suivante :
   backup.7 #Backup le plus ancien*
 ```
 Regardez le fichier *monserveur.cfg* pour voir les différentes options configurables.
-
 
 Dans le fichier *backup-incremental.sh* deux choses sont configurables au début du fichier :
 
