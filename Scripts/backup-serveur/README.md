@@ -19,7 +19,24 @@ L'architecture sera la suivante :
 ...
   backup.7 #Backup le plus ancien*
 ```
+Regardez le fichier *monserveur.cfg* pour voir les différentes options configurables.
+
+
+Dans le fichier *backup-incremental.sh* deux choses sont configurables au début du fichier :
+
+```bash
+# Dossier qui contient les fichiers de configuration
+CONFIG_PATH="/volume1/backup/scripts/config/"
+# Dossier qui contient les fichiers d'exclusion (utilisé si existant avec --exclude-from=)
+EXCLUDE_PATH="/volume1/backup/scripts/excludes/"
+```
 
 ## Utilisation
+`./backup-incremental.sh CHEMIN_FICHIER_CONFIGURATION.cfg`
+
+ex : 
+`./backup-incremental.sh /backup/scripts/config/monserveur.cfg`
+
+Si vous avez définis la variable *CONFIG_PATH* alors vous pouvez mettre uniquement le nom du fichier de configuration, s'il se trouve à l'intérieur du dossier : 
 `./backup-incremental.sh monserveur.cfg`
 
