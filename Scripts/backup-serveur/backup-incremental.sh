@@ -1,5 +1,7 @@
 #!/bin/bash
+# Dossier qui contient les fichiers de configuration
 CONFIG_PATH="/volume1/backup/scripts/config/"
+# Dossier qui contient les fichiers d'exclusion
 EXCLUDE_PATH="/volume1/backup/scripts/excludes/"
 
 if [ -z "$1" ];then
