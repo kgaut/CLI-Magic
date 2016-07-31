@@ -1,8 +1,8 @@
 #!/bin/bash
 # Dossier qui contient les fichiers de configuration
-CONFIG_PATH="/volume1/backup/scripts/config/"
+CONFIG_PATH="/backup/scripts/config/"
 # Dossier qui contient les fichiers d'exclusion (utilisé si existant avec --exclude-from=)
-EXCLUDE_PATH="/volume1/backup/scripts/excludes/"
+EXCLUDE_PATH="/backup/scripts/excludes/"
 
 if [ -z "$1" ];then
   echo "Vous devez passer un fichier de config en argument"
