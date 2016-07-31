@@ -36,6 +36,3 @@ done
 rsync -avPtze "ssh -p $SSH_PORT" "$USER@$SERVER:$REMOTE_PATH_TO_BACKUP/" "$BACKUP_LOCAL_PATH/backup.0/" --link-dest="$BACKUP_LOCAL_PATH/backup.1" --delete $EXCLUDE_COMMANDE
 
 touch "$BACKUP_LOCAL_PATH/backup.0"
-
-chown kgaut:users -R "$BACKUP_LOCAL_PATH/backup.0"
-chmod ug+x "$BACKUP_LOCAL_PATH/backup.0"
