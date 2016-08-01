@@ -11,7 +11,8 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:ubuntu-wine/ppa`|**Wine** : Lancer des applications windows sous GNU/Linux|
 |`ppa:tuxpoldo/btsync`|**btsync** : logiciel de synchronisation asynchrone|
 |`ppa:font-manager/staging`|**font-manager**|
-|`curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb` | **Keybase**|
+|`ppa:webupd8team/terminix`|**terminix** : terminal sous stéroids|
+
 
 ## Compta 
 |Adresse|Description|
@@ -45,4 +46,8 @@ PPAs Pour Ubuntu et dérivés
 |`ppa:numix/ppa` | numix-icon-theme-circle numix-gtk-theme |
 |`ppa:noobslab/themes`| http://www.noobslab.com|
 
+
+## Divers
+### Installer keybase : 
+`curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb`
 
