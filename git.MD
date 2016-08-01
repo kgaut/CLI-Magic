@@ -24,7 +24,7 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git add mofichier.php --patch` | ajout partiel du contenu d'un fichier pour le futur commit|
 |`git commit -m "Message de commit"` | Commit des fichiers "ajoutés" préalablement|
 |`git commit -a -m "Message de commit"` | Commit de tous les fichiers qui ont étés déjà versionnés|
-|`git push` | diffusion des commmits non envoyés encore|
+|`git push` | diffusion des commits encore non envoyés |
 
 ## Cherry pick
 
@@ -58,8 +58,8 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 |`git branch -a` | Listing des branches|
 |`git checkout -b NomBranche` | Création d'une branche locale **NomBranche** et déplacement vers la nouvelle branche|
 |`git push origin NomBranche` | Diffusion de la branche vers le serveur distant|
-|`git checkout master && git merge NomBranche` | déplacement dans le master et merge de la branche **NomBranche**|
-|`git branch -d NomBranche` | suppresion locale de ma branche **NomBranche**|
+|`git checkout master && git merge NomBranche` | Déplacement dans le master et merge de la branche **NomBranche**|
+|`git branch -d NomBranche` | Suppresion locale de ma branche **NomBranche**|
 |`git push origin --delete NomBranche` | suppression distante de la branche|
 |`git push origin :NomBranche` | Idem ci-dessus : suppression distante de la branche|
 |`git branch -m AncienNom NouveauNom` | Renommer la branche locale **AncienNom** en **NouveauNom**|
@@ -72,8 +72,8 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 |------- | -------|
 |`git tag -a 7.x-1.0 -m "tagging version 1"` | Création d'un tag localement anoté|
 |`git push origin 7.x-1.0` | Diffusion de ce tag|
-|`git tag -d 7.x-1.0` | suppression locale d'un tag|
-|`git push origin --delete 7.x-1.0` | suppression distante du tag|
+|`git tag -d 7.x-1.0` | Suppression locale d'un tag|
+|`git push origin --delete 7.x-1.0` | Suppression distante du tag|
 |`git push origin :7.x-1.0` | Idem ci-dessus : suppression distante du tag|
 
 ## Archives différentielles
@@ -87,7 +87,7 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 
 |Commande|Résultat|
 |------- | -------|
-|`git submodule add git@server:repo lib/dossier`|ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
+|`git submodule add git@server:repo lib/dossier`|Ajoute un sous-module dans le dossier **lib/dossier**, (qui ne doit pas exister|
 |`git submodule init`|Initialise les submodules du repo que l'on vient de cloner|
 |`git submodule update`|Update ("Pull") des submodules|
 
