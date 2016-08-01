@@ -58,8 +58,8 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 |`git branch -a` | Listing des branches|
 |`git checkout -b NomBranche` | Création d'une branche locale **NomBranche** et déplacement vers la nouvelle branche|
 |`git push origin NomBranche` | Diffusion de la branche vers le serveur distant|
-|`git checkout master && git merge NomBranche` | déplacement dans le master et merge de la branche **NomBranche**|
-|`git branch -d NomBranche` | suppresion locale de ma branche **NomBranche**|
+|`git checkout master && git merge NomBranche` | Déplacement dans le master et merge de la branche **NomBranche**|
+|`git branch -d NomBranche` | Suppresion locale de ma branche **NomBranche**|
 |`git push origin --delete NomBranche` | suppression distante de la branche|
 |`git push origin :NomBranche` | Idem ci-dessus : suppression distante de la branche|
 |`git branch -m AncienNom NouveauNom` | Renommer la branche locale **AncienNom** en **NouveauNom**|
