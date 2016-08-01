@@ -1,6 +1,6 @@
 xUbuntu-PPA
 =========
-PPAs Pour Ubuntu et dérivés
+PPAs pour Ubuntu et dérivés
 
 ## Utilitaires / Système 
 |Adresse|Description|
