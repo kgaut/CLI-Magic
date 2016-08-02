@@ -36,3 +36,12 @@ done
 rsync -avPtze "ssh -p $SSH_PORT" "$USER@$SERVER:$REMOTE_PATH_TO_BACKUP/" "$BACKUP_LOCAL_PATH/backup.0/" --link-dest="$BACKUP_LOCAL_PATH/backup.1" --delete $EXCLUDE_COMMANDE
 
 touch "$BACKUP_LOCAL_PATH/backup.0"
+
+if [ -z "$NEW_OWNER" ];then
+  echo "Pas de changement de permissions"
+else
+  chown "$NEW_OWNER":"$NEW_GROUP" -R "$BACKUP_LOCAL_PATH/backup.0"
+  chmod "$PERMISSIONS" -R "$BACKUP_LOCAL_PATH/backup.0"
+  echo "Permissions changées"
+fi
+
