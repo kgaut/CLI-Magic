@@ -45,6 +45,7 @@ PPAs pour Ubuntu et dérivés
 |------- | -------|
 |`ppa:numix/ppa` | numix-icon-theme-circle numix-gtk-theme |
 |`ppa:noobslab/themes`| http://www.noobslab.com|
+|`ppa:varlesh-l/papirus-pack`|Papirus icon pack|
 
 
 ## Divers
