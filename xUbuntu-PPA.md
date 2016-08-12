@@ -12,6 +12,7 @@ PPAs pour Ubuntu et dérivés
 |`ppa:tuxpoldo/btsync`|**btsync** : logiciel de synchronisation asynchrone|
 |`ppa:font-manager/staging`|**font-manager**|
 |`ppa:webupd8team/terminix`|**terminix** : terminal sous stéroids|
+|`ppa:nuvola-player-builders/webkit`|**libwebkit2gtk**|
 
 
 ## Compta 
