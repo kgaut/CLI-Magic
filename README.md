@@ -28,6 +28,7 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`tar cf - * | (cd ../../httpdocs/; tar xvf -)` | Déplacer un dossier et son contenu sans en modifier les droits|
 |` scp -P 1374 fichier.tar root@server.net:/home/test`| Envoyer le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh 1374 |
 |`for f in *; do mv "$f" "$f.jpg"; done`| ajouter une extension **.jpg** à tous les fichiers du dossier|
+|`ncdu`|permet de visualiser l'usage disque dans un dossier (necessite l'installation du package *ncdu*)|
 
 ## Grep
 |Commande|Résultat|
