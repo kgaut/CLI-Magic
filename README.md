@@ -30,6 +30,14 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`for f in *; do mv "$f" "$f.jpg"; done`| ajouter une extension **.jpg** à tous les fichiers du dossier|
 |`ncdu`|permet de visualiser l'usage disque dans un dossier (necessite l'installation du package *ncdu*)|
 
+## Transfert de fichiers (SCP)
+|Commande|Résultat|
+|------- | -------|
+|` scp USER@SERVER:/home/user/fichier.tar .`| Télécharge le fichier **/home/user/fichier.tar** depuis un server distant dans le dossier courant (en utilisant le port ssh standard (22)|
+|` scp -P 1234 USER@SERVER:/home/user/fichier.tar .`| Télécharge le fichier **/home/user/fichier.tar** depuis un server distant  dans le dossier courant  en se connectant via un port SSH spécifique|
+|` scp fichier.tar USER@SERVER:/home/test`| Envoie le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh standard (22) |
+|` scp -P 1374 fichier.tar root@server.net:/home/test`| Envoie le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh 1374 |
+
 ## Grep
 |Commande|Résultat|
 |------- | -------|
