@@ -53,3 +53,6 @@ PPAs pour Ubuntu et dérivés
 ### Installer keybase : 
 `curl -O https://dist.keybase.io/linux/deb/keybase-latest-amd64.deb && sudo dpkg -i keybase-latest-amd64.deb`
 
+
+## Jeux-vidéos / Emulation
+|`ppa:random-stuff/ppa`|**snes9x-gtk ** : Émulateur Super Nes|
