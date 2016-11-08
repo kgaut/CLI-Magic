@@ -82,6 +82,13 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 |------- | -------|
 | `git archive --output=../monarchive.tar.gz --verbose branche1 $(git diff --cached --name-only master)`| Création d'une archive .tar.gz des modifications entre la branche **branche1** et le **master **, ces deux éléments pouvant être remplacés par des tags, des id de commit...|
 
+## Gestion des fichiers / répertoires
+|Commande|Résultat|
+|------- | -------|
+|`git rm --cached mon_fichier` | Suppression du fichier *mon_fichier* du dépot sans supprimer le fichier physiquement|
+|`git rm --cached -r mon_dossier/` |  Suppression du dossier *mon_dossier* du dépot sans supprimer le dossier physiquement|
+
+
 ## Submodules
 [Quelques infos sur les submodules](http://stackoverflow.com/questions/1777854/git-submodules-specify-a-branch-tag)
 
