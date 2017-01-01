@@ -47,6 +47,17 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`grep -c ^ toto.txt` | Retourne le nombre de lignes du fichier toto.txt|
 |`grep access.log | awk -F "\ " {'print $7'}` | Récuperer uri + query string dans fichier de log apache|
 
+## Crontab 
+```
+ +---------------- minute (0 - 59)
+ |  +------------- hour (0 - 23)
+ |  |  +---------- day of month (1 - 31)
+ |  |  |  +------- month (1 - 12)
+ |  |  |  |  +---- day of week (0 - 6) (Sunday=0 or 7)
+ |  |  |  |  |
+ *  *  *  *  *  command to be executed 
+```
+
 ## Images
 |Commande|Résultat|
 |------- | -------|
