@@ -35,10 +35,9 @@ ajouter la ligne suivante :
 utilisation de la commande hostname
 `hostname monserveur.domain.com`
 
-## Gestion de l'heure
+## Gestion de l'heure (Fuseau Horaire)
 ```
-rm /etc/localtime
-ln -s /usr/share/zoneinfo/Europe/Paris /etc/localetime
+timedatectl set-timezone Europe/Paris
 ```
 ## Gestion des mails
 ### Installation de postfix
