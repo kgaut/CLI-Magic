@@ -42,7 +42,12 @@ ln -s /usr/share/zoneinfo/Europe/Paris /etc/localetime
 ```
 ## Gestion des mails
 ### Installation de postfix
-`yum install postfix`
+```
+yum install postfix
+systemctl start postfix
+systemctl enable postfix
+```
+
 ### Redirection des mails
 https://kgaut.net/journal/2016/serveur-rediriger-les-emails-envoyes-a-root.html
 
