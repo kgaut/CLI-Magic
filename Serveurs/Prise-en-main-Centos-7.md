@@ -68,6 +68,11 @@ yum install fail2ban
 Configuration fail2ban
 @todo wget d'un gist de /etc/fail2ban/jail.local
 
+```
+systemctl start fail2ban
+systemctl enable fail2ban
+```
+
 # Installation des packages de base 
 yum install curl-devel
 
