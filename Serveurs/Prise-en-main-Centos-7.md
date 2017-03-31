@@ -40,6 +40,15 @@ utilisation de la commande hostname
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/Europe/Paris /etc/localetime
 ```
+## Gestion des mails
+### Installation de postfix
+`yum install postfix`
+### Installation de postfix
+`yum install postfix`
+### Redirection des mails
+https://kgaut.net/journal/2016/serveur-rediriger-les-emails-envoyes-a-root.html
+
+
 
 # Paquets
 `yum update`
