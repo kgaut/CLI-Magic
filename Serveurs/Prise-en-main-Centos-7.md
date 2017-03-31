@@ -103,7 +103,7 @@ sudo mysql_secure_installation
 sudo systemctl enable mariadb.service
 ```
 
-## Installation de PHP 7.0
+### Installation de PHP 7.0
 ```
 yum install php70 php70-php-gettext php70-php-mbstring php70-php-curl php70-php-sqlite3 php70-php-soap php70-fpm php70-php-mysqlnd
 ```
