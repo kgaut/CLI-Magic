@@ -36,20 +36,26 @@ utilisation de la commande hostname
 `hostname monserveur.domain.com`
 
 ## Gestion de l'heure
+```
 rm /etc/localtime
 ln -s /usr/share/zoneinfo/Europe/Paris /etc/localetime
+```
 
 # Paquets
 `yum update`
 
 Installation de yum utils pour la commande `yum-config-manager` entre autres
+
 `yum install yum-utils`
 
 # Fail2ban
 https://www.linode.com/docs/security/using-fail2ban-for-security
-`wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
-`rpm -ivh epel-release-latest-7.noarch.rpm`
-`yum install fail2ban`
+```
+wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -ivh epel-release-latest-7.noarch.rpm
+yum install fail2ban
+```
+
 Configuration fail2ban
 @todo wget d'un gist de /etc/fail2ban/jail.local
 
