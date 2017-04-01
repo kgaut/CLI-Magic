@@ -61,7 +61,10 @@ https://kgaut.net/journal/2016/serveur-rediriger-les-emails-envoyes-a-root.html
 
 Installation de yum utils pour la commande `yum-config-manager` entre autres
 
-`yum install yum-utils`
+`yum install yum-utils curl-devel git`
+
+Note : d'autres possibilités d'installation pour git : 
+https://www.digitalocean.com/community/tutorials/how-to-install-git-on-centos-7  
 
 ## Fail2ban
 https://www.linode.com/docs/security/using-fail2ban-for-security
@@ -78,12 +81,6 @@ Configuration fail2ban :
 systemctl start fail2ban
 systemctl enable fail2ban
 ```
-
-## Installation des packages de base 
-yum install curl-devel
-
-## Installation de GIT
-https://www.digitalocean.com/community/tutorials/how-to-install-git-on-centos-7
 
 ## Pile Lamp
 ### ajout du dépot remi
