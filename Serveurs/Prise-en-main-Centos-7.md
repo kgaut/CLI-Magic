@@ -29,11 +29,17 @@ usermod -aG wheel monsuer
 ## Configuration du serveur
 
 ### Changement du nom du serveur
-`vim /etc/sysconfig/network`
+```
+vim /etc/sysconfig/network
+```
 ajouter la ligne suivante :
-`HOSTNAME=monserveur.domain.com`
+```
+HOSTNAME=monserveur.domain.com
+```
 utilisation de la commande hostname
-`hostname monserveur.domain.com`
+```
+hostname monserveur.domain.com
+```
 
 ### Gestion de l'heure (Fuseau Horaire)
 ```
