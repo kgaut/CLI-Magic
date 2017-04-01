@@ -2,7 +2,7 @@
 
 ## Gestion des disques
 ### Formatage ext4 d'un disque
-`mkfs -t ext4 /dev/vdb1`
+`mkfs -t ext4 /dev/vdb`
 
 ### Montage d'un second disque
 éditer le fichier `/etc/fstab` et ajouter la ligne : 
