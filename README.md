@@ -30,6 +30,11 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`for f in *; do mv "$f" "$f.jpg"; done`| ajouter une extension **.jpg** à tous les fichiers du dossier|
 |`ncdu`|permet de visualiser l'usage disque dans un dossier (necessite l'installation du package *ncdu*)|
 
+## Wget
+|Commande|Résultat|
+|------- | -------|
+|`get -nd -H -p -A jpg,jpeg,png,gif -e robots=off http://monsite.com/mapage` | Récupère toutes les images de la page http://monsite.com/mapage|
+
 ## Transfert de fichiers (SCP)
 |Commande|Résultat|
 |------- | -------|
