@@ -1,4 +1,4 @@
-# Apache2 & PHP5
+# Apache2
 
 ## Protection par htpasswd
 
