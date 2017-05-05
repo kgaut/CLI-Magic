@@ -1,9 +1,9 @@
-#Raspberry Pi
+# Raspberry Pi
 
-##Raspbian
+## Raspbian
 Image linux minimale basée sur Debian
 
-###Ressources 
+### Ressources 
 [Télécharger l'image](https://www.raspberrypi.org/downloads/raspbian/)
 
 [Flasher l'image sur une carte SD](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
@@ -16,13 +16,13 @@ http://www.howtogeek.com/142044/how-to-turn-a-raspberry-pi-into-an-always-on-bit
 
 http://www.howtogeek.com/146410/how-to-automate-your-always-on-raspberry-pi-download-box/all/
 
-###Commandes pratiques
+### Commandes pratiques
 
-####Lancer l'outil de configuration
+#### Lancer l'outil de configuration
 `sudo raspi-config`
 
-####Changer le mot de passe de connexion
+#### Changer le mot de passe de connexion
 `sudo passwd`
 
-####Changer le nom de la machine
+#### Changer le nom de la machine
 `sudo hostname nouveaunom`
