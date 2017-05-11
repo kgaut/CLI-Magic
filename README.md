@@ -44,6 +44,14 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`scp -P 1374 fichier.tar root@server.net:/home/test`| Envoie le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh 1374 |
 |`scp -r mondossier USER@server.net:/home/test`| Envoie le dossier **mondossier** vers le serveur **server.net** en utilisant le port ssh standard (22) |
 
+## Transfert de fichiers spécifique as fuck
+### Fichier le plus récent
+Récupérer via SCP le fichier le plus récent du dossier distant **/home/dossier/db/** et le stocker dans le dossier local **/home/moi/dossier_local/ : 
+`scp USER@SERVER:/home/dossier/db/$(ssh USER@SERVER 'ls -t /home/dossier/db/ | head -1') /home/moi/dossier_local/`
+### Fichiers modifiés dans les dernières 24H
+Récupérer via RSYNC les fichiers modifiés dans les dernières 24H du dossier distant **/home/dossier/db/** et les stocker dans le dossier local **/home/moi/dossier_local/ : 
+`rsync -avz USER@SERVER:'$(find /home/dossier/db/ -ctime -1)' /home/moi/dossier_local/`
+
 ## Grep
 |Commande|Résultat|
 |------- | -------|
