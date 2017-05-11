@@ -17,6 +17,10 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git update-index --assume-unchanged path/to/file.txt`|Enlève le fichier spécifié des fichiers modifiés lors d'un `git status`|
 |`git update-index --no-assume-unchanged path/to/file.txt`|Ajoute le fichier spécifié aux fichiers modifiés lors d'un `git status`|
 
+## Désactiver la prise en compte des permissions
+Pas tellement conseillé, mais des fois, on a pas le choix : 
+`git config core.fileMode false`
+
 ## Commits
 |Commande|Résultat|
 |------- | -------|
