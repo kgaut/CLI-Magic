@@ -23,6 +23,8 @@ Pas tellement conseillé, mais des fois, on a pas le choix. Si on ne souhaite pa
 
 `git config core.fileMode false`
 
+[Plus d'informations](http://stackoverflow.com/questions/1580596/how-do-i-make-git-ignore-file-mode-chmod-changes)
+
 ## Commits
 |Commande|Résultat|
 |------- | -------|
