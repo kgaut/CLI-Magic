@@ -10,6 +10,7 @@ GIT
 
 ## Ignorer les modification d'un fichier
 Afin d'éviter de commiter un fichier de config que l'on a modifié pour son environement
+
 **Note :** Le mieux restant de passer par un fichier de configuration
 
 |Commande|Résultat|
@@ -18,7 +19,8 @@ Afin d'éviter de commiter un fichier de config que l'on a modifié pour son env
 |`git update-index --no-assume-unchanged path/to/file.txt`|Ajoute le fichier spécifié aux fichiers modifiés lors d'un `git status`|
 
 ## Désactiver la prise en compte des permissions
-Pas tellement conseillé, mais des fois, on a pas le choix : 
+Pas tellement conseillé, mais des fois, on a pas le choix. Si on ne souhaite pas commiter les changements de permission dans un dépôt : 
+
 `git config core.fileMode false`
 
 ## Commits
