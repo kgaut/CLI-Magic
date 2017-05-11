@@ -46,14 +46,14 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 
 ## Transfert de fichiers spécifique as fuck
 ### Fichier le plus récent
-Récupérer via SCP le fichier le plus récent du dossier distant **/home/dossier/db/** et le stocker dans le dossier local **/home/moi/dossier_local/ : 
+Récupérer via SCP le fichier le plus récent du dossier distant **/home/dossier/** et le stocker dans le dossier local **/var/dossier/** : 
 ```
-scp USER@SERVER:/home/dossier/db/$(ssh USER@SERVER 'ls -t /home/dossier/db/ | head -1') /home/moi/dossier_local/
+scp USER@SERVER:/home/dossier/$(ssh USER@SERVER 'ls -t /home/dossier/ | head -1') /var/dossier/
 ```
 ### Fichiers modifiés dans les dernières 24H
-Récupérer via RSYNC les fichiers modifiés dans les dernières 24H du dossier distant **/home/dossier/db/** et les stocker dans le dossier local **/home/moi/dossier_local/ : 
+Récupérer via RSYNC les fichiers modifiés dans les dernières 24H du dossier distant **/home/dossier/** et les stocker dans le dossier local **/var/dossier/** : 
 ```
-rsync -avz USER@SERVER:'$(find /home/dossier/db/ -ctime -1)' /home/moi/dossier_local/
+rsync -avz USER@SERVER:'$(find /home/dossier/ -ctime -1)' /var/dossier/
 ```
 
 ## Grep
