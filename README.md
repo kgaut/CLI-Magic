@@ -60,9 +60,9 @@ rsync -avz USER@SERVER:'$(find /home/dossier/ -ctime -1)' /var/dossier/
 |Commande|Résultat|
 |------- | -------|
 |`grep 'mafonction()' --include='\*.php'` | Rechercher les appels de mafonction() uniquement dans les fichiers php|
-|`cat toto.txt | grep 'lorem' -c` | Retourne le nombre de "lorem" dans toto.txt|
+|`cat toto.txt \| grep 'lorem' -c` | Retourne le nombre de "lorem" dans toto.txt|
 |`grep -c ^ toto.txt` | Retourne le nombre de lignes du fichier toto.txt|
-|`grep access.log | awk -F "\ " {'print $7'}` | Récuperer uri + query string dans fichier de log apache|
+|`grep access.log \| awk -F "\ " {'print $7'}` | Récuperer uri + query string dans fichier de log apache|
 
 ## Crontab 
 ```
