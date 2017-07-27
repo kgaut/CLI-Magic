@@ -61,6 +61,11 @@ Afin d'appliquer sur la branche courante un ou plusieurs commits qui viennent d'
 
 [Basic Branching and Merging](http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
+Mettre à jour la liste des branches d'une "remote" : 
+```
+git remote update origin --prune
+```
+
 |Commande|Résultat|
 |------- | -------|
 |`git branch -a` | Listing des branches|
