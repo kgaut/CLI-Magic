@@ -34,7 +34,7 @@ then
 	mysqladmin drop $DB_TO_IMPORT  --force --verbose
 	mysqladmin create $DB_TO_IMPORT --force --verbose
 	echo "----"
-	echo "C'est partit pour l'import, cela peut-être un poil long, allez-vous faire un café."
+	echo "C'est parti pour l'import, cela peut-être un poil long, allez-vous faire un café."
 	zcat $FILE | mysql $DB_TO_IMPORT
 else
     echo "OK, on annule tout !"
