@@ -90,7 +90,9 @@ rsync -avz USER@SERVER:'$(find /home/dossier/ -ctime -1)' /var/dossier/
 |`mysql -u USER -h localhost DB < DUMP.SQL` | Importe de dump **DUMP.SQL** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root**  n'a pas de mot de passe|
 |```zcat DUMP.sql.gz \| mysql -u USER -p DB``` |Importe de dump gzipé **DUMP.sql.gz** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** a un mot de passe|
 |```zcat DUMP.sql.gz \| mysql -u USER DB``` |Importe de dump gzipé **DUMP.sql.gz** dans la base **DB** du serveur **localhost** si l'utilisateur mysql **root** n'a pas de mot de passe|
-|```UPDATE `users` SET `mail` = CONCAT("moi-",ROUND(RAND() * 10000) , '@monsite.net') ```| Modifie les emails de la table **user** avec des adresses random|
+|```UPDATE `users` SET `mail` = CONCAT("moi+site-",ROUND(RAND() * 10000) , '@monsite.net') ```| Modifie les emails de la table **users** avec des adresses random|
+|```UPDATE `users` SET `mail` = CONCAT("moi+site-",`uid` , '@monsite.net')```| Modifie les emails de la table **users** avec des adresses générée en fonction du UID de l'utilisateur|
+UPDATE `users` SET `mail` = CONCAT("moi+site-",`uid` , '@monsite.net')
 
 ## Utilisateurs
 |Commande|Résultat|
