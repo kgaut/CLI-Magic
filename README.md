@@ -95,5 +95,5 @@ UPDATE `users` SET `mail` = CONCAT("moi+site-",`uid` , '@monsite.net')
 |Commande|Résultat|
 |------- | -------|
 |`svn log -l 5` | Retourne les 5 dernières lignes d'un log|
-|`svn log -l | grep 'USER'` | Lister l'ensemble des COMMIT par USER|
-|`svn log -l | grep 'USER' -c` | Récuperer le nombre de COMMIT par USER|
+|`svn log -l \| grep 'USER'` | Lister l'ensemble des COMMIT par USER|
+|`svn log -l \| grep 'USER' -c` | Récuperer le nombre de COMMIT par USER|
