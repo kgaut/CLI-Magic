@@ -2,6 +2,14 @@
  ## Modifier un crontab
  
  ```crontab -e ```
+ 
+ 
+## Recevoir les résultats par email 
+Ajouter tout en haut du fichier 
+```
+ MAILTO=moi@email.com
+```
+Sera envoyé à cette adresse le résultat des commandes executés.
   
 ## Syntaxe
 ```
