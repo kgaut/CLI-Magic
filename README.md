@@ -44,6 +44,12 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`scp -P 1374 fichier.tar root@server.net:/home/test`| Envoie le fichier **fichier.tar** vers le serveur **server.net** en utilisant le port ssh 1374 |
 |`scp -r mondossier USER@server.net:/home/test`| Envoie le dossier **mondossier** vers le serveur **server.net** en utilisant le port ssh standard (22) |
 
+## Transfert de fichiers (RSYNC)
+Transferer tous les fichiers `.sql.gz` depuis le dossier `/vhosts` du serveur `serveur.net` vers le dossier `/vhosts/` local :
+```
+rsync -avh  --progress --stats --ignore-errors --include="*/" --include="*.sql.gz"  --exclude="*" -e ssh USER@server.net:/vhosts/ /vhosts/
+```
+
 ## Transfert de fichiers spécifique as fuck
 ### Fichier le plus récent
 Récupérer via SCP le fichier le plus récent du dossier distant **/home/dossier/** et le stocker dans le dossier local **/var/dossier/** : 
