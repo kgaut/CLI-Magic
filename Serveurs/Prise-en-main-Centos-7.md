@@ -7,6 +7,8 @@
 `mkfs -t ext4 /dev/vdb`
 
 ### Montage d'un second disque
+voir aussi : https://www.scaleway.com/en/docs/attach-and-detach-a-volume-to-a-bare-metal-instance/
+
 éditer le fichier `/etc/fstab` et ajouter la ligne : 
 
 `/dev/vdb /home auto  defaults,nofail,errors=remount-ro 0 2`
