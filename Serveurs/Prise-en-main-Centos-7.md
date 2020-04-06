@@ -1,4 +1,6 @@
 # Prise en main d'un serveur Centos 7
+## découverte des disques
+`lsblk`
 
 ## Gestion des disques
 ### Formatage ext4 d'un disque
