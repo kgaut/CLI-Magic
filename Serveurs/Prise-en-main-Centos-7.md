@@ -114,3 +114,18 @@ sudo systemctl enable mariadb.service
 ```
 yum install php70 php70-php-gettext php70-php-mbstring php70-php-curl php70-php-sqlite3 php70-php-soap php70-fpm php70-php-mysqlnd
 ```
+
+### ACL
+Sur dossier home : 
+```
+setfacl -m u:apache:r-x,d:u:apache:r-x /home/USER
+```
+sur dossier public_html
+```
+setfacl -m u:apache:r-x,d:u:apache:r-x /home/USER/public_html
+```
+
+sur dossier upload
+```
+setfacl -m u:apache:rwx,d:u:apache:rwx dir/upload
+```
