@@ -116,22 +116,21 @@ yum install php70 php70-php-gettext php70-php-mbstring php70-php-curl php70-php-
 ```
 
 ### ACL
-Sur dossier home : 
+
+Droits de lecture
 ```
-setfacl -m u:apache:r-x,d:u:apache:r-x /home/USER
-```
-sur dossier public_html
-```
-setfacl -m u:apache:r-x,d:u:apache:r-x /home/USER/public_html
+setfacl -m u:apache:r-x,d:u:apache:r-x ./
+setfacl -R -m group:apache:r-x,d:group:apache:r-x ./
 ```
 
-sur dossier upload
+Droits d'écriture
 ```
 setfacl -m u:apache:rwx,d:u:apache:rwx ./
 setfacl -R -m group:apache:xrw,d:group:apache:rwx ./
 ```
 
-Attention si selinux : 
+S'il n'est toujours pas possible d'écrire, peut-être à cause de selinux
+
 ```
 sudo chcon -R -t httpd_sys_rw_content_t ./
 ```
