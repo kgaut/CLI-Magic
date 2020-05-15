@@ -127,5 +127,11 @@ setfacl -m u:apache:r-x,d:u:apache:r-x /home/USER/public_html
 
 sur dossier upload
 ```
-setfacl -m u:apache:rwx,d:u:apache:rwx dir/upload
+setfacl -m u:apache:rwx,d:u:apache:rwx ./
+setfacl -R -m group:apache:xrw,d:group:apache:rwx ./
+```
+
+Attention si selinux : 
+```
+sudo chcon -R -t httpd_sys_rw_content_t ./
 ```
