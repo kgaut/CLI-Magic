@@ -10,6 +10,7 @@ sudo iptables -A INPUT -p tcp --dport 8983 -j DROP
 ```
 
 ## Autoriser une ip
+
 ```
 sudo iptables -A INPUT -p tcp -s 111.222.333.444 --dport 8983 -j ACCEPT
 ```
