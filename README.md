@@ -30,6 +30,13 @@ Un peu de réorganisation est prévue pour les mois qui viennent.
 |`for f in *; do mv "$f" "$f.jpg"; done`| ajouter une extension **.jpg** à tous les fichiers du dossier|
 |`ncdu`|permet de visualiser l'usage disque dans un dossier (necessite l'installation du package *ncdu*)|
 
+## Tar
+```
+tar -zcvf /var/backup/databases.tar.gz /root/backup/
+tar -zcvf - /home/ | split --byte=256MB - /var/backup/home/home.tar.gz
+tar -zcvf /var/backup/etc.tar.gz /etc/
+```
+
 ## Wget
 |Commande|Résultat|
 |------- | -------|
